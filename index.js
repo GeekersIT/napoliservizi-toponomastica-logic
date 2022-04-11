@@ -41,7 +41,9 @@ app.post("/municipalita/aggiungi", async (req, res) => {
       {
         name: data.new.id, 
         attributes: {
-        nome: [data.new.nome]
+        nome: [data.new.nome],
+        gruppo_municipalita: [data.new.id]
+
       }},
     );
     res.send("OK");
